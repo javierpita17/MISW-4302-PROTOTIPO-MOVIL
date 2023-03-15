@@ -2,9 +2,18 @@
     <string name="app_name">AlarmEvent</string>
     <string name="lbl_email">Correo:</string>
     <string name="lbl_pass">Contraseña:</string>
+    <string name="lbl_name">Nombre:</string>
+    <string name="lbl_register">Regístrese</string>
+    <string name="lbl_confirm_pass">Confirme su contraseña:</string>
+
+
     <string name="lbl_btn_register">Registrarse</string>
     <string name="lbl_btn_ingress">Ingresar</string>
+    <string name="lbl_btn_accept">Aceptar</string>
+    <string name="lbl_btn_cancel">Cancelar</string>
 
+    <string name="placeholder_name">Escriba su nombre</string>
     <string name="placeholder_email">Escriba su correo</string>
     <string name="placeholder_pass">Escriba su contraseña</string>
+    <string name="placeholder_confirm_pass">Confirme su contraseña</string>
 </resources>
