@@ -1,6 +1,5 @@
 package com.javier.ux.alarmevent;
 
-import android.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,7 +7,7 @@ import android.widget.Button;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
-public class register extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     Button btnCancel;
 
@@ -35,7 +34,7 @@ public class register extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-              new SweetAlertDialog(register.this, SweetAlertDialog.SUCCESS_TYPE)
+              new SweetAlertDialog(RegisterActivity.this, SweetAlertDialog.SUCCESS_TYPE)
                       .setTitleText("Usuario Creado con éxito")
                       .show();
             }

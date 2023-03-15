@@ -10,6 +10,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnRegister;
 
+    Button btnIngress;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,14 +19,26 @@ public class MainActivity extends AppCompatActivity {
 
         btnRegister = (Button) findViewById(R.id.idBtnRegister);
 
-        btnRegister.setOnClickListener(new View.OnClickListener(){
+        btnIngress = (Button) findViewById(R.id.idBtnIngress);
 
+
+        btnRegister.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, register.class);
+                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
         });
+
+        btnIngress.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 }

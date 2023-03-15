@@ -5,6 +5,7 @@
     <string name="lbl_name">Nombre:</string>
     <string name="lbl_register">Regístrese</string>
     <string name="lbl_confirm_pass">Confirme su contraseña:</string>
+    <string name="lbl_alarms_crated">Alarmas creadas</string>
 
 
     <string name="lbl_btn_register">Registrarse</string>
