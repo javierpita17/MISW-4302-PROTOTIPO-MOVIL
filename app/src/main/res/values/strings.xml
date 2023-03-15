@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AlarmEvent</string>
+    <string name="lbl_email">Correo:</string>
+    <string name="lbl_pass">Contraseña:</string>
+    <string name="lbl_btn_register">Registrarse</string>
+    <string name="lbl_btn_ingress">Ingresar</string>
+
+    <string name="placeholder_email">Escriba su correo</string>
+    <string name="placeholder_pass">Escriba su contraseña</string>
 </resources>
