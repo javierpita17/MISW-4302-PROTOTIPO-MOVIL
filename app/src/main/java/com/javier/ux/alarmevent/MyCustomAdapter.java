@@ -65,6 +65,7 @@ public class MyCustomAdapter extends BaseAdapter implements ListAdapter {
                 new SweetAlertDialog(context, SweetAlertDialog.WARNING_TYPE)
                         .setTitleText("¿Seguro de eliminar la alarma?")
                         .setConfirmText("Aceptar")
+                        .setCancelText("Cancelar")
                         .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener(){
                             @Override
                             public void onClick(SweetAlertDialog sweetAlertDialog) {
@@ -72,20 +73,22 @@ public class MyCustomAdapter extends BaseAdapter implements ListAdapter {
                                         .setTitleText("Alarma eliminada")
                                         .setConfirmText("Aceptar")
                                         .setConfirmClickListener(null)
+                                        .showCancelButton(false)
                                         .changeAlertType(SweetAlertDialog.SUCCESS_TYPE);
-                            }
-                        })
-                        .setCancelButton("Cancelar", new SweetAlertDialog.OnSweetClickListener(){
-
-                            @Override
-                            public void onClick(SweetAlertDialog sweetAlertDialog) {
-                                sweetAlertDialog.dismissWithAnimation();
                             }
                         })
                         .show();
             }
         });
 
+
+        btnEditItem.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, UpdateActivity.class);
+                context.startActivity(intent);
+            }
+        });
 
         return view;
     }

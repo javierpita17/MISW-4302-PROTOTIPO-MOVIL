@@ -8,6 +8,7 @@
     <string name="lbl_alarms_crated">Alarmas creadas</string>
     <string name="lbl_type_alarm">Tipo de alarma</string>
     <string name="lbl_create_alarm">Crear alarma</string>
+    <string name="lbl_update_alarm">Actualizar alarma</string>
 
 
     <string name="lbl_btn_register">Registrarse</string>
