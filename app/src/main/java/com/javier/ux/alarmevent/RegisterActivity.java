@@ -1,5 +1,6 @@
 package com.javier.ux.alarmevent;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +37,13 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
               new SweetAlertDialog(RegisterActivity.this, SweetAlertDialog.SUCCESS_TYPE)
                       .setTitleText("Usuario Creado con éxito")
+                      .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener(){
+                          @Override
+                          public void onClick(SweetAlertDialog sweetAlertDialog) {
+                              Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                              startActivity(intent);
+                          }
+                      })
                       .show();
             }
         });

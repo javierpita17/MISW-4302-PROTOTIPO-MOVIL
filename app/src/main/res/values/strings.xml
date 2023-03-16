@@ -6,6 +6,8 @@
     <string name="lbl_register">Regístrese</string>
     <string name="lbl_confirm_pass">Confirme su contraseña:</string>
     <string name="lbl_alarms_crated">Alarmas creadas</string>
+    <string name="lbl_type_alarm">Tipo de alarma</string>
+    <string name="lbl_create_alarm">Crear alarma</string>
 
 
     <string name="lbl_btn_register">Registrarse</string>
@@ -17,4 +19,7 @@
     <string name="placeholder_email">Escriba su correo</string>
     <string name="placeholder_pass">Escriba su contraseña</string>
     <string name="placeholder_confirm_pass">Confirme su contraseña</string>
+    <string name="placeholder_name_alarm">Escriba nombre de alarma</string>
+    <string name="placeholder_name_location">Escriba nombre de ubicación</string>
+    <string name="placeholder_hour">00</string>
 </resources>
