@@ -9,15 +9,25 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
-public class DashboardActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class DashboardActivity extends AppCompatActivity{
 
     ListView simpleList;
 
     Button btnCreateAlarm;
 
-    String listaAlarmas [] = {"Alarma parcial", "Alarma cumpleaños" ,"Alarma partido" ,"Alarma universidad" ,"Alarma fiesta familiar"};
 
     ImageButton btnClose;
+
+    ImageButton btnDeleteItem;
+
+    ImageButton btnEditItem;
+
+    ArrayList<String> aux = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +38,21 @@ public class DashboardActivity extends AppCompatActivity {
 
         simpleList = (ListView)findViewById(R.id.idListAlarm);
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_list_view, R.id.idTextViewAlarm, listaAlarmas);
+        //ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_list_view, R.id.idTextViewAlarm, listaAlarmas);
 
-        simpleList.setAdapter(arrayAdapter);
+
+        aux.add("Alarma parcial");
+        aux.add("Alarma cumpleaños");
+        aux.add("Alarma partido");
+        aux.add("Alarma universidad");
+        aux.add("Alarma fiesta familiar");
+        aux.add("Clase música");
+        aux.add("Visita familiar");
+
+        simpleList.setAdapter(new MyCustomAdapter(aux,DashboardActivity.this));
 
         btnClose = (ImageButton) findViewById(R.id.idBtnDashboardClose);
+
 
         btnCreateAlarm.setOnClickListener(new View.OnClickListener(){
             @Override

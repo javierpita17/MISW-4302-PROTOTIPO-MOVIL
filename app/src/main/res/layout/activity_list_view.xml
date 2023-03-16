@@ -8,10 +8,31 @@
 
     <TextView
         android:id="@+id/idTextViewAlarm"
-        android:layout_width="fill_parent"
-        android:layout_height="45dp"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
-        android:textColor="@color/black"
-        />
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/idBtnListViewDelete"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/float_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_delete_24"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageButton
+        android:id="@+id/idBtnListViewEdit"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/float_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_edit_24"
+        tools:layout_editor_absoluteY="0dp" />
 
 </android.support.constraint.ConstraintLayout>
